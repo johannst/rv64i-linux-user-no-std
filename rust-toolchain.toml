@@ -1,0 +1,4 @@
+[toolchain]
+# Required to build with nightly to enable `build-std`, see .cargo/config for
+# more details why.
+channel = "nightly"

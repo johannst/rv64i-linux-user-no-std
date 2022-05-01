@@ -7,3 +7,13 @@ rustflags = ["-C", "target-feature=-m,-a,-c"]
 runner    = "qemu-riscv64"
 #runner    = "qemu-riscv64 -d in_asm"
 #runner    = "qemu-riscv64 -strace"
+
+[unstable]
+# Shipped core library is build with `imac` extensions, since we disable `mac`
+# we have to rebuild `core`.
+# Unstable features are only enabled with a nightly toolchain:
+# > cargo +nightly build
+#
+# Validate the resulting binary by checking the instructions & encodings:
+# > llvm-objdump -C -d <bin>
+build-std = ["core"]

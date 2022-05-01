@@ -18,3 +18,10 @@ fn panic_handler(info: &core::panic::PanicInfo) -> ! {
     eprintln!("{}", info);
     sys::exit(42);
 }
+
+// Since we disable the atomic isa extension, the compiler emits calls to software emulation. We
+// provide the stub to make the linker happy for now.
+#[no_mangle]
+pub fn __atomic_load_8() {
+    panic!("__atomic_load_8 not implemented!");
+}

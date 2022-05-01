@@ -1,0 +1,9 @@
+[build]
+target = "riscv64imac-unknown-none-elf"
+
+[target.riscv64imac-unknown-none-elf]
+# Effectively build for rv64i.
+rustflags = ["-C", "target-feature=-m,-a,-c"]
+runner    = "qemu-riscv64"
+#runner    = "qemu-riscv64 -d in_asm"
+#runner    = "qemu-riscv64 -strace"

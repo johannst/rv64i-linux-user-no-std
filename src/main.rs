@@ -1,7 +1,7 @@
 #![no_std]
 #![no_main]
 
-use user_sw::{eprintln, println, sys};
+use rv64i_linux_user_no_std::{eprintln, println, sys};
 
 fn main() {
     println!("Hello {} from rust main().", 1337);

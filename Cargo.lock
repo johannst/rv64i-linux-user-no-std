@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "user-sw"
+name = "rv64i-linux-user-no-std"
 version = "0.1.0"

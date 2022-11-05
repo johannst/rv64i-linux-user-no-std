@@ -1,8 +1,8 @@
 [package]
-name    = "user-sw"
+name    = "rv64i-linux-user-no-std"
 version = "0.1.0"
 authors = ["Johannes Stoelp"]
 edition = "2021"
-license = "<TODO>"
+license = "MIT"
 
 [dependencies]

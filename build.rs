@@ -57,5 +57,5 @@ fn main() {
 
     // Write out rust file with syscall numbers.
     let outfile = format!("{}/syscalls.rs", std::env::var("OUT_DIR").unwrap());
-    std::fs::write(&outfile, output).unwrap();
+    std::fs::write(outfile, output).unwrap();
 }

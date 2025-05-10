@@ -1,3 +1,7 @@
+// SPDX-License-Identifier: MIT
+//
+// Copyright (c) 2022, Johannes Stoelp <dev@memzero.de>
+
 /// Generate rust constants for linux riscv syscall numbers.
 ///
 /// Syscall numbers are parsed from the `linux/unistd.h` header.

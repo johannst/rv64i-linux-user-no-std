@@ -1,3 +1,7 @@
+// SPDX-License-Identifier: MIT
+//
+// Copyright (c) 2022, Johannes Stoelp <dev@memzero.de>
+
 #![no_std]
 
 /// Raw file descriptor.
